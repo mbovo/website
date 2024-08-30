@@ -1,0 +1,75 @@
+baseURL = '/'
+languageCode = 'en-us'
+defaultContentLanguage = "en"
+defaultContentLanguageInSubdir = true
+title = 'Manuel Bovo'
+theme = "hermit-v2"
+
+[params.author]
+  name = "Manuel Bovo"
+
+[taxonomies]
+  tag = "tags"
+
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  description = "My personal web niche"
+  themeColor = "#494f5c"
+
+  homeSubtitle = "Working in the ☁️ | Living in a cyberpunk 🌍 | sw/infra/mixing/sr engineer 🛠️ "
+  footerCopyright = "<a href='https://creativecommons.org/licenses/by-nc-nd/4.0/'>CC BY-NC-ND 4.0</a>"
+  # bgImg = ""
+  #gitUrl = "https://github.com/mbovo"
+
+  justifyContent = true
+
+  relatedPosts = false
+  code_copy_button = true
+
+  homeSubtitlePrinter = true
+  scrollToTop = true 
+  global_mathjax = false
+  readTime = true
+  #readTimeSeparator = "CHANGE ME READ TIME"
+  # legacyLayout = false
+  shareSocial = true
+
+  [[params.socialLinks]]
+    name = "github"
+    url = "https://github.com/mbovo"  
+  [[params.socialLinks]]
+    name = "linkedin"
+    url = "https://linkedin.com/in/mbovo"
+  [[params.socialLinks]]
+    name = "mastodon"
+    url = "https://hachyderm.io/@zroot"
+
+
+[menu]
+
+  # [[menu.main]]
+  #   name = "Posts"
+  #   url = "posts/"
+  #   weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "about/"
+    weight = 20
+
+
+  [[menu.main]]
+    name = "Projects"
+    url = "projects/"
+    weight = 20
+
+
+  [[menu.main]]
+    name = "Resume"
+    url = "resume/"
+    weight = 20

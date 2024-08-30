@@ -1,0 +1,4 @@
+public/*
+containers/caddy/public/*
+.hugo_build.lock
+resources/_gen*

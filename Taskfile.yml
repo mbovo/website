@@ -1,0 +1,51 @@
+
+# https://taskfile.dev
+
+version: '3'
+
+tasks:
+  default:
+    cmds:
+      - task -l
+    silent: true
+
+  check:
+    desc: Run all pre-commit hooks
+    cmds:
+      - pre-commit run -a
+
+  pre-commit:
+    cmds:
+      - pre-commit install
+    sources:
+      - .git/hooks/pre-commit
+      - .pre-commit-config.yaml
+    generates:
+      - .git/hooks/pre-commit
+    method: checksum
+
+  reset:
+    cmds:
+      - pre-commit uninstall
+      - rm -rf .task
+
+  clean:
+    desc: Cleanup all built binaries
+    cmds:
+      - rm -rf containers/nginx/public
+
+  build:
+    desc: Build hugo website
+    cmds:
+      - hugo --minify --destination containers/nginx/public
+      - task: docker:build
+
+  docker:build:
+    desc: Build all docker images
+    cmds:
+      - task: docker:build:nginx
+
+  docker:build:nginx:
+    desc: Build nginx web server image
+    cmds:
+      - docker build -t website:latest -f containers/nginx/Dockerfile containers/nginx
