@@ -24,7 +24,6 @@ jobs:
         with:  
           generate_release_notes: true
           files: |
-            public/*
             LICENSE
 
   docker-build:
@@ -72,5 +71,6 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           file: containers/nginx/Dockerfile
+          context: containers/nginx
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
