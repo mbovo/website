@@ -71,6 +71,6 @@ jobs:
       - name: Build and push
         uses: docker/build-push-action@v5
         with:
-          file: containers/Dockerfile
+          file: containers/nginx/Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
           tags: ${{ steps.meta.outputs.tags }}
