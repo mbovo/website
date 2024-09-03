@@ -37,7 +37,7 @@ tasks:
   build:
     desc: Build hugo website
     cmds:
-      - hugo --minify --destination containers/nginx/public
+      - hugo --cleanDestinationDir --minify --verbose --destination containers/nginx/public
       - task: docker:build
 
   docker:build:
