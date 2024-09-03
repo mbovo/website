@@ -54,16 +54,13 @@ jobs:
           extended: false
           args: --cleanDestinationDir --minify --verbose --destination containers/nginx/public
 
-      - name: Fix perms
-        run: |
-          sudo chown -R 1000:1000 containers/nginx/public
-          sudo chmod -R 755 containers/nginx/public
-
       - name: Docker meta
         id: meta
         uses: docker/metadata-action@v5
         with:
           images: ghcr.io/${{env.IMAGE_NAME}}
+          labels: |
+            org.opencontainers.image.version=${{github.ref_name}}
           flavor: |
             latest=auto
             prefix=

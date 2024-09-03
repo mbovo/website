@@ -1,11 +1,12 @@
 FROM nginxinc/nginx-unprivileged:alpine
-COPY public /usr/share/nginx/html
 
-LABEL org.opencontainers.image.version=v1.0.0
 LABEL org.opencontainers.image.title=website
 LABEL org.opencontainers.image.description="Manuel's website"
 LABEL org.opencontainers.image.vendor="Manuel Bovo"
 LABEL org.opencontainers.image.licenses=Apache-2.0
 LABEL org.opencontainers.image.source="https://github.com/mbovo/website"
 
-EXPOSE 80
+EXPOSE 8080
+
+COPY --chown=1000:1000 --chmod=755 public /usr/share/nginx/html 
+
