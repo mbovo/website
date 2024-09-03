@@ -1,4 +1,4 @@
-FROM nginx:stable-alpine
+FROM nginxinc/nginx-unprivileged:alpine
 COPY public /usr/share/nginx/html
 
 LABEL org.opencontainers.image.version=v1.0.0
