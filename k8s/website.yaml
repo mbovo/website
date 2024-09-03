@@ -9,11 +9,11 @@ kind: Deployment
 metadata:
   name: website
   namespace: website
-labels:
-  app.kubernetes.io/instance: website
-  app.kubernetes.io/name: website
+  labels:
+    app.kubernetes.io/instance: website
+    app.kubernetes.io/name: website
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app.kubernetes.io/instance: website
@@ -26,7 +26,6 @@ spec:
     spec:
       securityContext:
         runAsUser: 1000
-        allowPrivilegeEscalation: false
       containers:
       - name: website
         image: ghcr.io/mbovo/website:latest
@@ -37,10 +36,10 @@ spec:
           protocol: TCP
         resources:
           limits:
-            cpu: "0.5"
+            cpu: "0.2"
             memory: "256Mi"
           requests:
-            cpu: "0.5"
+            cpu: "0.2"
             memory: "256Mi"
 
 ---
@@ -49,9 +48,9 @@ kind: Service
 metadata:
   name: website
   namespace: website
-labels:
-  app.kubernetes.io/instance: website
-  app.kubernetes.io/name: website
+  labels:
+    app.kubernetes.io/instance: website
+    app.kubernetes.io/name: website
 spec:
   selector:
     app.kubernetes.io/instance: website
@@ -68,16 +67,16 @@ kind: HorizontalPodAutoscaler
 metadata:
   name: website
   namespace: website
-labels:
-  app.kubernetes.io/instance: website
-  app.kubernetes.io/name: website
+  labels:
+    app.kubernetes.io/instance: website
+    app.kubernetes.io/name: website
 spec:
   scaleTargetRef:
     apiVersion: apps/v1
     kind: Deployment
     name: website
-  minReplicas: 2
-  maxReplicas: 5
+  minReplicas: 1
+  maxReplicas: 4
   metrics:
   - type: Resource
     resource:
