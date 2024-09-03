@@ -17,7 +17,3 @@ He is currently focused on creating and maintaining efficient systems and automa
 In his private life he is a music lover and a vinyl collector having worked also as a Sound and Mixing Engineer.
 Dad of a little dog he likes hiking and Tabletop RPGs.
 He is also a passionate reader of science fiction and fantasy novels.
-
-## [Projects](/en/projects)
-
-## [Resume](/en/resume)
