@@ -25,10 +25,10 @@ spec:
         app.kubernetes.io/name: website
     spec:
       securityContext:
-        runAsUser: 1000
+        runAsUser: 101
       containers:
       - name: website
-        image: ghcr.io/mbovo/website:v0.1.5
+        image: ghcr.io/mbovo/website:v0.1.6
         imagePullPolicy: Always
         ports:
         - containerPort: 8080

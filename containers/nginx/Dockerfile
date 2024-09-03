@@ -8,5 +8,5 @@ LABEL org.opencontainers.image.source="https://github.com/mbovo/website"
 
 EXPOSE 8080
 
-COPY --chown=1000:1000 --chmod=755 public /usr/share/nginx/html 
+COPY --chown=101:101 --chmod=755 public /usr/share/nginx/html 
 
