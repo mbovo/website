@@ -66,6 +66,7 @@ apiVersion: autoscaling/v2
 kind: HorizontalPodAutoscaler
 metadata:
   name: website
+  namespace: website
 labels:
   app.kubernetes.io/instance: website
   app.kubernetes.io/name: website
