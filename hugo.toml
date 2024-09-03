@@ -21,7 +21,7 @@ theme = "hermit-v2"
   description = "My personal web niche"
   themeColor = "#494f5c"
 
-  homeSubtitle = "Working in the ☁️ | Living in a cyberpunk 🌍 | sw/infra/mixing/sr engineer 🛠️ "
+  homeSubtitle = "Working in the ☁️ | Living in a cyberpunk 🌍 | software/infra/site reliability engineer 🛠️ "
   footerCopyright = "<a href='https://creativecommons.org/licenses/by-nc-nd/4.0/'>CC BY-NC-ND 4.0</a>"
   # bgImg = ""
   #gitUrl = "https://github.com/mbovo"
