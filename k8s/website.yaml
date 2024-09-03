@@ -30,6 +30,7 @@ spec:
       containers:
       - name: website
         image: ghcr.io/mbovo/website:latest
+        imagePullPolicy: Always
         ports:
         - containerPort: 80
           name: http
