@@ -1,4 +1,4 @@
 public/*
-containers/caddy/public/*
+containers/nginx/public/*
 .hugo_build.lock
 resources/_gen*
