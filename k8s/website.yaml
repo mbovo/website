@@ -29,7 +29,7 @@ spec:
         allowPrivilegeEscalation: false
       containers:
       - name: website
-        image: gh.cr.io/mbovo/website:latest
+        image: ghcr.io/mbovo/website:latest
         ports:
         - containerPort: 80
           name: http
