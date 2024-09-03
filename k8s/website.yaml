@@ -28,7 +28,7 @@ spec:
         runAsUser: 101
       containers:
       - name: website
-        image: ghcr.io/mbovo/website:v0.1.7
+        image: ghcr.io/mbovo/website:v0.1.8
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
