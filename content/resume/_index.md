@@ -36,9 +36,14 @@ Italian (native) | English (fluent) | Spanish (basic)
 
 ### [2022-Current] **Staff Infrastructure Engineer**  @ _Sysdig_
 
+• Process Improvement: reshape of SaaS region building process, removal of redundant tasks, definition of clearer ownership and run-books, mitigation of technical debt impact; reduction of time needed from 6 months to 4 weeks.
+• OpenAPI Migration: introduced code generation (java and go) from API spec definitions; design and development of a Kubernetes operator that dynamically builds the customer-facing documentation reflecting what's currently running on a given environment.
+• Reliability: introduction and review of SLI/SLO for critical user journeys  (CUJs) using Prometheus and Grafana. On-call rotation as L2/L3 for supporting SaaS environments. Coordinating Incident Response and managing communications with internal and external stakeholders during Incidents.
+• DevOps Changes: introduction of nix shells to simplify development tooling installation; adoption of GitHub Actions with auto-scaling self-hosted runners on Kubernetes and Jenkins progressive deprecation plan; introduction of GitOps principles to enable self-service approach for Continous Deployment through FluxCD.
+
 - `Process Improvement` reshape of SaaS region building process, removal of redundant tasks, definition of clearer ownership and run-books, mitigation of technical debt impact; reduction of time needed from 6 months to 4 weeks.
 - `OpenAPI Migration` introduced code generation (java and go) from API spec definitions; design and development of a Kubernetes operator that dynamically builds the customer-facing documentation reflecting what's currently running on a given environment.
-- `Reliability` introducing and reviewing SLO/SLI for services and functionalities. On-call rotation as L2/L3 for supporting SaaS environments. Coordinating Incident Response and managing communications with internal and external stakeholders during an Incident.
+- `Reliability` introduction and review of SLI/SLO for critical user journeys  (CUJs) using Prometheus and Grafana. On-call rotation as L2/L3 for SaaS environments. Coordinating Incident Response and managing communications with internal and external stakeholders during Incidents.
 - `DevOps Changes`: introduction of _nix shells_ to simplify development tooling installation; adoption of _GitHub Actions_ with auto-scaling self-hosted runners on Kubernetes and Jenkins progressive deprecation plan; introduction of GitOps principles to enable self-service approach for Continous Deployment through FluxCD.
 
 ### [2020-2022] **Sr. Infrastructure Engineer**  @ _Sysdig_
