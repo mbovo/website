@@ -34,7 +34,7 @@ Except for the first one, this is a list of projects that cannot be shared as pu
 
 ### GitOps CD Pipeline
 
-- Private Repository @Sysdig but for the concept, you can refer to [my lab](https://github.com/mbovo/proxmox_lab)
+- Private Repository @Sysdig but for the concept, you can refer to [my lab](https://github.com/mbovo/proxmox_homelab)
 - Design and implementation of a Continuous Delivery pipeline based on GitOps principles with FluxCD.
 - Currently used by all infrastructure components across all Kubernetes clusters on different cloud providers.
 - GitOps: you have an immediate snapshot of what is running in your clusters, simply looking at the main branch.
