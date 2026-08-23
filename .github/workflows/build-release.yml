@@ -54,7 +54,7 @@ jobs:
         with:
           version: latest
           extended: true
-          args: --cleanDestinationDir --minify --verbose --destination containers/nginx/public
+          args: --cleanDestinationDir --minify --logLevel debug --destination containers/nginx/public
 
       - name: Docker meta
         id: meta
