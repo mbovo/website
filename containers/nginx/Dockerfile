@@ -1,4 +1,4 @@
-FROM nginxinc/nginx-unprivileged:alpine
+FROM nginxinc/nginx-unprivileged:1.31.9-alpine
 
 LABEL org.opencontainers.image.title=website
 LABEL org.opencontainers.image.description="Manuel's website"
